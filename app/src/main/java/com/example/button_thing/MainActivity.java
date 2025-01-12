@@ -25,8 +25,14 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     public void onpush(View view) {
         btn = findViewById(R.id.btn);
-        counter ++;
-        btn.setText("this is a click number: " + counter);
+        if (counter < 6){
+            counter ++;
+            btn.setText("this is a click number: " + counter);
+        } else {
+            counter = 0;
+            btn.setText("Enough to click. Go to new start!");
+        }
+
 
     }
 }
