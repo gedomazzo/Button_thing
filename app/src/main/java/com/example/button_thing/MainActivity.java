@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
             btn.setText("this is a click number: " + counter);
         } else {
             counter = 0;
-            btn.setText("Enough to click. Go to new start!");
+            btn.setText("this is a click number: " + counter);
+
         }
 
 
