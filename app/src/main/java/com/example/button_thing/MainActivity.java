@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     Button btn;
+    int counter = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     public void onpush(View view) {
         btn = findViewById(R.id.btn);
-        btn.setText("of yeah you cliched");
+        counter ++;
+        btn.setText("this is a click number: " + counter);
 
     }
 }
